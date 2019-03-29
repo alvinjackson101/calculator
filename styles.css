@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+body{
+
+	max-width: 1180px;
+    width: 98%;
+   	margin: 0px auto;
+    text-align: center;
+}
+p{
+
+	font-family: arial;
+	font-weight: lighter;
+	margin-top: -32px;
+	margin-bottom: 32px;
+}
+.container{
+
+	display: grid;
+	border: 1px solid #ccc;
+  	border-radius: 5px;
+  	position: absolute;
+  	top: 30%;
+  	left: 50%;
+  	padding: 8px;
+  	transform: translate(-50%, -50%);
+  	width: 400px;
+}
+
+#img{
+
+   height: 200px;
+   max-width: auto;
+   margin-top: 20px;
+}
+
+
+
+
