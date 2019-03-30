@@ -80,6 +80,21 @@ p{
 	 
 }
 
+.numbers:hover{
+
+	background-color: #f8f8f8;
+}
+
+.operators:hover{
+
+	background-color: #353535;
+}
+
+.equal-btn:hover{
+
+	background-color: #353535;
+}
+
 
 .operators{
 
@@ -88,6 +103,7 @@ p{
 	border-radius: 4px;
 	border: 1px solid #252525;
 	font-size: 2rem;
+	padding: 10px;
 	
 }
 
@@ -98,6 +114,7 @@ p{
 	border: 1px solid #f8e548;
 	color: #000;
 	font-size: 2rem;
+	padding: 10px;
   
 }
 
