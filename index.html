@@ -6,117 +6,53 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel=" shortcut icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<!--<script>
-
-		var calculator = new Object();
-		calculator.add = function (x, y){
-			return x + y;
-		}
-
-		calculator.subtract = function (x, y){
-			return x - y;
-		}
-
-		calculator.divide = function (x, y){
-			return x / y;	
-		}
-
-		calculator.multiply = function (x, y){
-			return x * y;
-		}
-
-		function ClickButtonPress(){
-			document.getElementById("numbers").innerHTML = "value";
-		}
-
-		function ClickButtonPress(){
-			document.getElementById("operators").innerHTML = "value";
-		}
-
-		var calculate = function(){
-			console.dir("this");
-
-			var seven = document.querySelector("#btnseven");
-			var eight = document.querySelector("#btneight");
-
-			if(this.id == "btnplus") consol.log(calculator.plus(btnseven));
-
-		}
-	</script>-->
 </head>
 
 <body>
-
+	
+	<!--Background, logo, text-->
 	<div class="bg-img"></div>
 	<img id="img" src="logo.png">
 	<p>Instructions not included.</p>
 
 	<div class="CalcContainer">
-		
-		<!--<div id="CalcDisplay">
-			
-		</div>-->
 
-		<input type="text" id="display" value="0"/>
-
+		<!--Displays Output / Answer-->
+		<div id="output">
+			<h2 id="output-value"></h2>
+		</div>
+		<!-- border around keyboard-->
 		<div id="PadBorder">
-
+			<!-- keyboard buttons-->
 			<div class="KeyContainer">
+				
+				<button class="operator" id="+">+</button>
+				<button class="operator" id="-">-</button>
+				<button class="operator" id="*">x</button>
+				<button class="operator" id="/"><i class="fas fa-divide fa-xs"></i></button>
 
-				<input type="button" class="operators"value="+" id="btnplus" onclick="ClickButtonPress('+', this);" />
+				<button class="number" id="7">7</button>
+				<button class="number" id="8">8</button>
+				<button class="number" id="9">9</button>
+				<button class="number" id="4">4</button>
+				<button class="number" id="5">5</button>
+				<button class="number" id="6">6</button>
+				<button class="number" id="1">1</button>
+				<button class="number" id="2">2</button>
+				<button class="number" id="3">3</button>
+				<button class="number" id="0">0</button>
 
-				<input type="button" class="operators"value="-" id="btnsubtract" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="operators"value="x" id="btnmultiply" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="operators"value="/" id="btndivide"  onclick="ClickButtonPress(this);" />
-					
-				<input type="button" class="numbers"value="7" id="btnseven" onclick="input ('7')" />
-
-				<input type="button" class="numbers"value="8" id="btneight" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="9" id="btnnine" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="4" id="btnfour" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="5" id="btnfive" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="6" id="btnsix" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="1" id="btnone" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="2" id="btntwo" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="3" id="btnthree" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="numbers"value="0" id="btnzero" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="operators"value="." id="btndecimal" onclick="ClickButtonPress(this);" />
-
-				<input type="button" class="operators"value="AC" id="btnclear"  onclick="clearAll();" />
-
-				<input type="button" class="equal-btn" value="=" id="btnequal"  onclick="ClickButtonPress(this);" />
+				<button class="operator" id=".">.</button>
+				<button class="operator" id="ac">AC</button>
+				<button class="operator" id="btnequal">=</button>
 
 			</div>
 
 		</div>
 
 	</div>
-
-	<!--<script>
-
-		var operators = document.querySelectorAll(".operators");
-			console.log("operators");
-
-		for(i = 0; 1 < operators.length; i++){
-			operators[i].addEventListener("ClickButtonPress"), calculate;
-		}
-		btn.addEventListener("click", calculate);
-
-
-	</script>-->
+	<!--Link to JavaScript File-->
 	<script src="index.js"></script>
-	
 	
 </body>
 </html>

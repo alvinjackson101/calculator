@@ -63,18 +63,23 @@ p{
   	background-color: #fef151;
 }
 
+h2{
 
-#display{
+	font-family: arial;
+	font-weight: lighter;
+}
+
+#output{
 	display: grid;
   	font-size: 24px;
   	height: 80px;
+  	width: 100%;
   	margin-bottom: 10px;
   	background-color: #252525;
   	color: #fff35c;
   	text-align: right;
   	padding-right: 20px;
-  	padding-top: 10px;
-  	padding-left: 10px;
+  	padding-top: -10px;
   	border-radius: 15px 15px 0px 0px;
 }
 
@@ -97,12 +102,12 @@ p{
 	 
 }
 
-.numbers:hover{
+.number:hover{
 
 	background-color: #f8f8f8;
 }
 
-.operators:hover{
+.operator:hover{
 
 	background-color: #353535;
 }
@@ -113,7 +118,7 @@ p{
 }
 
 
-.operators{
+.operator{
 
 	color:#fff;
 	background-color: #252525;
@@ -124,7 +129,7 @@ p{
 	
 }
 
-.numbers{
+.number{
 
 	background-color: #fff;
 	border-radius: 4px;
@@ -135,7 +140,7 @@ p{
   
 }
 
-.equal-btn{
+#btnequal{
 
 	color:#fff;
 	background-color: #252525;
