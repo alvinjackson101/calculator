@@ -8,51 +8,56 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body>
+	<body>
 	
-	<!--Background, logo, text-->
-	<div class="bg-img"></div>
-	<img id="img" src="logo.png">
-	<p>Instructions not included.</p>
+		<!--Background, logo, text-->
+		<div class="bg-img"></div>
+		<img id="img" src="logo.png">
+		<p>Instructions not included.</p>
 
-	<div class="CalcContainer">
-
-		<!--Displays Output / Answer-->
-		<div id="output">
-			<h2 id="output-value"></h2>
-		</div>
-		<!-- border around keyboard-->
-		<div id="PadBorder">
-			<!-- keyboard buttons-->
-			<div class="KeyContainer">
+		<div class="CalcContainer">
+			
+			<!--Displays Output / Answer-->
+			<div id=result>
+				<div id="output">
+					<h2 id="output-value"></h2>
+				</div>
+				<div id=history>
+					<div id=history-value></div>
+				</div>
+			</div>
+			<!-- border around keyboard-->
+			<div id="PadBorder">
+				<!-- keyboard buttons-->
+				<div class="KeyContainer">
 				
-				<button class="operator" id="+">+</button>
-				<button class="operator" id="-">-</button>
-				<button class="operator" id="*">x</button>
-				<button class="operator" id="/"><i class="fas fa-divide fa-xs"></i></button>
+					<button class="operator" id="+">+</button>
+					<button class="operator" id="-">-</button>
+					<button class="operator" id="*">x</button>
+					<button class="operator" id="/"><i class="fas fa-divide fa-xs"></i></button>
 
-				<button class="number" id="7">7</button>
-				<button class="number" id="8">8</button>
-				<button class="number" id="9">9</button>
-				<button class="number" id="4">4</button>
-				<button class="number" id="5">5</button>
-				<button class="number" id="6">6</button>
-				<button class="number" id="1">1</button>
-				<button class="number" id="2">2</button>
-				<button class="number" id="3">3</button>
-				<button class="number" id="0">0</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="number" id="0">0</button>
 
-				<button class="operator" id=".">.</button>
-				<button class="operator" id="ac">AC</button>
-				<button class="operator" id="btnequal">=</button>
+					<button class="operator" id=".">.</button>
+					<button class="operator" id="ac">AC</button>
+					<button class="operator" id="btnequal">=</button>
+
+				</div>
 
 			</div>
 
 		</div>
-
-	</div>
-	<!--Link to JavaScript File-->
-	<script src="index.js"></script>
+		<!--Link to JavaScript File-->
+		<script src="index.js"></script>
 	
-</body>
+	</body>
 </html>
