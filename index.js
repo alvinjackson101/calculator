@@ -25,8 +25,20 @@ function reverseNumberFormat(num){
 var operator = document.getElementsByClassName("operator");
 for (var i =0;i<operator.length;i++){
 	operator[i].addEventListener('click', function(){
-		alert("The operator clicked:"+this.id);
-	})
+		if(this.id=="ac"){
+			printOutput("");
+		}
+		else{
+			var output=getOutput();
+			if(output!=""){
+				output=reverseNumberFormat(output);
+				if(this.id=="="){
+					var result=eval(output);
+					printOutput(result);
+				}
+			}
+		}
+	});
 }
 
 var number = document.getElementsByClassName("number");
