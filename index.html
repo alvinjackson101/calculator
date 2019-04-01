@@ -1,66 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel=" shortcut icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!--<script>
+
+		var calculator = new Object();
+		calculator.add = function (x, y){
+			return x + y;
+		}
+
+		calculator.subtract = function (x, y){
+			return x - y;
+		}
+
+		calculator.divide = function (x, y){
+			return x / y;	
+		}
+
+		calculator.multiply = function (x, y){
+			return x * y;
+		}
+
+		function ClickButtonPress(){
+			document.getElementById("numbers").innerHTML = "value";
+		}
+
+		function ClickButtonPress(){
+			document.getElementById("operators").innerHTML = "value";
+		}
+
+		var calculate = function(){
+			console.dir("this");
+
+			var seven = document.querySelector("#btnseven");
+			var eight = document.querySelector("#btneight");
+
+			if(this.id == "btnplus") consol.log(calculator.plus(btnseven));
+
+		}
+	</script>-->
 </head>
 
 <body>
+
+	<div class="bg-img"></div>
 
 		<img id="img" src="logo.png">
 	<p>Instructions not included.</p>
 
 	<div class="CalcContainer">
 		
-		<div id="CalcDisplay">
-				0
-		</div>
+		<!--<div id="CalcDisplay">
+			
+		</div>-->
+
+		<input type="text" id="display" value="0"/>
 
 		<div id="PadBorder">
 
 			<div class="KeyContainer">
 
-				<input type="button" class="operators"value="+" id="btn-plus"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="+" id="btnplus" onclick="ClickButtonPress('+', this);" />
 
-				<input type="button" class="operators"value="-" id="btn-subtract"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="-" id="btnsubtract" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="operators"value="x" id="btn-multiply"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="x" id="btnmultiply" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="operators"value="/" id="btn-divide"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="/" id="btndivide"  onclick="ClickButtonPress(this);" />
 					
-				<input type="button" class="numbers"value="7" id="btn-seven"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="7" id="btnseven" onclick="input ('7')" />
 
-				<input type="button" class="numbers"value="8" id="btn-eight"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="8" id="btneight" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="9" id="btn-nine"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="9" id="btnnine" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="4" id="btn-four"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="4" id="btnfour" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="5" id="btn-five"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="5" id="btnfive" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="6" id="btn-six"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="6" id="btnsix" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="1" id="btn-one"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="1" id="btnone" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="2" id="btn-two"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="2" id="btntwo" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="3" id="btn-three"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="3" id="btnthree" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="numbers"value="0" id="btn-zero"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="numbers"value="0" id="btnzero" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="operators"value="." id="btn-decimal"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="." id="btndecimal" onclick="ClickButtonPress(this);" />
 
-				<input type="button" class="operators"value="AC" id="btn-clear"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="operators"value="AC" id="btnclear"  onclick="clearAll();" />
 
-				<input type="button" class="equal-btn" value="=" id="btn-equal"  onclick="ClickButtonPress(this);" />
+				<input type="button" class="equal-btn" value="=" id="btnequal"  onclick="ClickButtonPress(this);" />
 
 			</div>
 
 		</div>
 
 	</div>
+
+	<!--<script>
+
+		var operators = document.querySelectorAll(".operators");
+			console.log("operators");
+
+		for(i = 0; 1 < operators.length; i++){
+			operators[i].addEventListener("ClickButtonPress"), calculate;
+		}
+		btn.addEventListener("click", calculate);
+
+
+	</script>-->
+	<script src="index.js"></script>
 	
 	
 </body>
